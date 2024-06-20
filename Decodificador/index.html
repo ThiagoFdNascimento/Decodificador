@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <script src="https://kit.fontawesome.com/ed3229e75f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <span class="material-symbols-outlined">
+            mystery
+            </span>
+    </header>
+    <main>
+    <section class="input__sect">
+            <textarea name="input" id="txtInput" placeholder="Digite Uma Palavra" class="input"></textarea>
+    <section class="sect__botoes">
+        <p class="atenção">Apenas letras minúsculas e sem acento</p>
+        <div class="container__botoes">
+            <button class="botaoCriptografar" id="btn1" onclick="btnEncriptar(); hideElemAndShowCopyBtn();">Criptografar</button>
+            <button class="botaoDescriptografar" id="btn2" onclick="decryptBtn(); hideElemAndShowCopyBtn();">Descriptografar</button> 
+        </div>
+    </section>
+    </section>
+    <section id="resultCriptografia" class="resultado__criptografia">
+        <div id="exclamIcon2">
+            <i class="fa-sharp fa-solid fa-exclamation fa-flip fa-10x" id="exclIcon"></i>
+        </div>
+        <div class="indicadores">
+            <h2 class="indicador__input" id="indicator">Nenhuma mensagem encontrada</h2>
+            <h3 class="dica__texto" id="tip">Digite um texto que você deseja criptografar ou descriptografar.</h3>
+        </div>
+            <textarea class="displayValue" id="displayValue" type="text" ></textarea>
+        <div class="container__botao__copiar">
+            <button class="botao__copiar" id="copyText" onclick="funcCopyText()">Copiar</button>
+        </div>    
+        </section>
+    </main>
+    <script src="app.js"></script>  
+</body>
+</html>

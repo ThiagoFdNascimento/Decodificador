@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --color-background: black;
+    --colors-between: #1c202a;
+    --color-icons-button: #2A7AE4;
+    --color-ic-bt-hover: #5595E9;
+    --color-ic-bt-2-hover:#D4E4FA;
+    --color-footer: #2f3646;
+    --color-font: white;
+    --color-label-placeholder:#A2A2A2;
+    --font-size-titles: 2em;
+    --font-size-itens-subtext-footer: 1em;
+    --font-size-buttons-mobile: 0.875em;
+    --font-weigth-titles-icons: 700;
+    --font-weight-itens-subtextcont: 500;
+    --font-weight-subtext-header-about: 400;
+    --font-weight-buttons-mobile: 600;
+    --font-family: "Raleway";
+}
+
+html {
+    min-height:100%;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    max-width: 100%;
+    width: 100%;
+    min-height:100%;
+    min-height:60.8vh;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    font-family: var(--font-family);
+    padding: 2.5rem 2.5rem;  
+}
+
+main{
+    max-width: 100%;
+    min-height:60.8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.cabecalho{
+    width: 60rem;
+}
+
+
+.material-symbols-outlined {
+    font-size: 6rem !important;
+    color: var(--color-icons-button);
+}
+
+.input__sect{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    right: 5rem;
+    top: 5rem;
+    padding-left: 15rem;
+}
+
+.input{
+    display: flex;
+    height: 100%;
+    line-height: 3rem;
+    padding: 0;
+    max-width: 42.5rem;
+    max-height: 70rem;
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    background-color: var(--color-background);
+    color: var(--color-icons-button);
+    resize: none;
+    overflow: hidden;
+    caret-color: var(--color-icons-button);
+}
+
+::placeholder{
+    color: var(--color-icons-button);
+    max-width: 42.5rem;
+    font-size: 2rem;
+    width: 100%;
+    
+}
+
+.sect__botoes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.atenção{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.container__botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.botaoCriptografar{
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    height: 4.188rem;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    border: 2px solid;
+    border-color: var(--color-icons-button);
+}
+
+.botaoDescriptografar{
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    height: 4.188rem;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    border: 2px solid;
+    border-color: var(--color-icons-button);
+}
+
+.displayValue{
+    line-height: 1.8rem;
+    color: var(--color-icons-button);
+    border-top: transparent;
+    border: 0;
+    background-color: var(--color-background);
+    overflow: hidden;
+    resize: none;
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.resultado__criptografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 6rem;
+    border: 2px solid;
+    border-color: var(--color-icons-button);
+    border-radius: 24px;
+    padding: 32px 32px;
+    position: relative;
+    height: 120vh;
+    max-height: 100%;
+    width: 25rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.fa-solid {
+    --fa-beat-scale: 1.1;
+    --fa-animation-duration: 2.5s;
+    display: flex;
+    text-align: center;
+    color: var(--color-icons-button);
+    
+}
+
+#exclamIcon2{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+
+.exclamation{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    
+}
+
+.indicadores{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btnSec{
+    position: relative;
+    top: 0;   
+}
+
+
+.container__botao__copiar{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: center;
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.botao__copiar{
+    display: none;
+    color: var(--color-font);
+    background-color: var(--color-background);
+    border: solid 2px;
+    border-color: var(--color-icons-button);
+    border-radius: 24px;
+    max-width: 17rem;
+    width: 100%;
+    height: 4.188rem;
+}
+
+@media (max-width: 1366px) {
+
+    body{
+        padding: 0.75rem 2.5rem;
+    }
+
+    .input__sect{
+        top: 0;
+    }
+
+    .resultado__criptografia{
+        height: 103vh;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 925px) {
+    body{
+        padding: 2.5rem;
+    }
+
+    .cabecalho{
+        padding-top: 33px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 18rem;
+    }
+
+    .input__sect{
+        padding-left: 0;
+        right: 0;
+        padding-top: 7.5rem;
+        min-height: 36rem;
+        height: 100%;
+    }
+
+    .input{
+        min-height: 36rem;
+        height: 100%;
+    }
+    
+    .resultado__criptografia{
+        gap: 1rem;
+        bottom: 0;
+        top: 0;
+        position: relative;
+        width: 100%;
+        max-width: 52rem;
+        max-height: auto;
+        height: 30rem;
+    }
+    
+    .botao__copiar{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 426px) {
+
+    main{
+        gap: 7rem;
+    }
+
+    body{
+        padding: 0 1rem;
+    }
+
+      .input__sect{
+        padding-top: 3.5rem;
+        min-height: 20rem;
+        height: 100%;
+    }
+
+    .input{
+        min-height: 20rem;
+        height: 100%;
+        
+    }
+
+      .atenção {
+        padding-top: 3rem;
+    
+    }
+
+       .resultado__criptografia{
+        margin-top: 3rem;
+
+    }
+
+    }   
